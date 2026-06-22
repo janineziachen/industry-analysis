@@ -1,0 +1,232 @@
+/* Apple-inspired design system for /preview */
+
+.apple-page {
+  min-height: 100vh;
+  background: #000000;
+  color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Nav */
+.apple-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(0, 0, 0, 0.72);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.apple-nav-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apple-nav-logo {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #f5f5f7;
+}
+
+.apple-nav-badge {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  color: #86868b;
+}
+
+/* Hero */
+.apple-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 120px 24px 80px;
+}
+
+.apple-hero-inner {
+  max-width: 720px;
+  text-align: center;
+}
+
+.apple-hero-eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #86868b;
+  margin-bottom: 16px;
+}
+
+.apple-hero-title {
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: #f5f5f7;
+  margin: 0 0 24px;
+  background: linear-gradient(to bottom, #ffffff, #a1a1a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.apple-hero-subtitle {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #86868b;
+  margin: 0 0 48px;
+}
+
+/* Search */
+.apple-search-form {
+  display: flex;
+  gap: 12px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.apple-search-input {
+  flex: 1;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 14px;
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f5f5f7;
+  outline: none;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.apple-search-input::placeholder {
+  color: #48484a;
+}
+
+.apple-search-input:focus {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.apple-search-btn {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 14px;
+  border: none;
+  background: #f5f5f7;
+  color: #000000;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.apple-search-btn:hover {
+  opacity: 0.88;
+  transform: scale(1.02);
+}
+
+.apple-search-btn:active {
+  transform: scale(0.98);
+}
+
+.apple-search-btn:disabled {
+  opacity: 0.32;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.apple-hint {
+  margin-top: 24px;
+  font-size: 13px;
+  color: #48484a;
+}
+
+.apple-hint-accent {
+  color: #2997ff;
+}
+
+/* Features */
+.apple-features {
+  padding: 80px 24px 120px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.04);
+}
+
+.apple-features-grid {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .apple-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.apple-feature-card {
+  padding: 40px 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 0.5px solid rgba(255, 255, 255, 0.06);
+  text-align: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.apple-feature-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.apple-feature-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.apple-feature-icon {
+  width: 32px;
+  height: 32px;
+  color: #86868b;
+}
+
+.apple-feature-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #f5f5f7;
+  margin: 0 0 8px;
+}
+
+.apple-feature-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #6e6e73;
+  margin: 0;
+}
+
+/* Footer */
+.apple-footer {
+  padding: 40px 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #48484a;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.04);
+}
