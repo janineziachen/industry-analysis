@@ -86,7 +86,23 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Prerequisites
+### 🌐 直接使用（推荐）
+
+无需安装任何软件，直接打开网站即可使用：
+
+👉 **[https://frabjous-cajeta-82bc8f.netlify.app/](https://frabjous-cajeta-82bc8f.netlify.app/)**
+
+打开后点右上角「API 设置」，填入你的 Anthropic API Key，即可开始生成行业报告。
+
+> **注意**：调用 AI 功能需要能访问 Anthropic API（`api.anthropic.com`）。国内用户可在「API 设置」中填入支持国内访问的第三方 API 中转地址。
+
+---
+
+### 💻 本地部署（开发者）
+
+如需在本地运行或二次开发，请按以下步骤操作。
+
+#### Prerequisites
 
 * Node.js 18+
 * npm
