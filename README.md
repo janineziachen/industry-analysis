@@ -1,5 +1,11 @@
 <a id="readme-top"></a>
 
+> ⚠️ **部署说明 / Deployment Notice**
+>
+> 由于在线演示部署在 Netlify，受其 serverless 函数 10 秒超时限制，报告生成功能暂时无法正常使用。**建议按照下方「本地部署」步骤在自己电脑上运行**，体验完整功能。
+>
+> The live demo is hosted on Netlify which has a 10-second serverless function timeout — too short for AI report generation. **Please follow the Local Development steps below to run it on your own machine.**
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
