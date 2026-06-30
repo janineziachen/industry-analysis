@@ -1,10 +1,11 @@
 <a id="readme-top"></a>
 
-> ⚠️ **部署说明 / Deployment Notice**
+> 🚀 **在线体验 / Live Demo**
 >
-> 由于在线演示部署在 Netlify，受其 serverless 函数 10 秒超时限制，报告生成功能暂时无法正常使用。**建议按照下方「本地部署」步骤在自己电脑上运行**，体验完整功能。
+> 👉 **[https://industry-analysis-production.up.railway.app](https://industry-analysis-production.up.railway.app)**
 >
-> The live demo is hosted on Netlify which has a 10-second serverless function timeout — too short for AI report generation. **Please follow the Local Development steps below to run it on your own machine.**
+> 点右上角「API 设置」填入你的 Anthropic API Key 即可开始使用。
+> Click "API Settings" in the top right corner and enter your Anthropic API Key to get started.
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -23,7 +24,7 @@
     <a href="https://github.com/janineziachen/industry-analysis"><strong>查看文档 / Docs »</strong></a>
     <br />
     <br />
-    <a href="https://frabjous-cajeta-82bc8f.netlify.app/" target="_blank"><strong>🚀 立即使用 / Live Demo</strong></a>
+    <a href="https://industry-analysis-production.up.railway.app" target="_blank"><strong>🚀 立即使用 / Live Demo</strong></a>
     &middot;
     <a href="https://github.com/janineziachen/industry-analysis/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
@@ -107,7 +108,7 @@ After the report is generated, jump directly into the **Product Planning** modul
 
 无需安装任何软件，直接打开网站即可 · No installation required, just open the link:
 
-👉 **[https://frabjous-cajeta-82bc8f.netlify.app/](https://frabjous-cajeta-82bc8f.netlify.app/)**
+👉 **[https://industry-analysis-production.up.railway.app](https://industry-analysis-production.up.railway.app)**
 
 点右上角「API 设置」填入你的 Anthropic API Key 即可开始使用。
 Click "API Settings" in the top right corner and enter your Anthropic API Key.
